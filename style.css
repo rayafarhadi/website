@@ -44,20 +44,187 @@ nav {
 
 .nav-link {
     color: #ffffff;
-
+    
     font-size: 12pt;
     text-decoration: none;
 }
 
 .nav-link:hover {
-    color: #9f6eea;
+    color: #ea876e;
+}
+
+.body {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .header {
     color: #453e4e;
-
+    
     font-size: 26pt;
     text-transform: uppercase;
     text-align: center;
     font-weight: 800;
+    
+    margin-bottom: 40px;
 }
+
+.about-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.traits {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: auto;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.hex-wrap{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.hexagon{
+    background-color: #9f6eea;
+    height: 100%;
+    width: calc(100% * 0.57735);
+    display: inline-block;
+}
+
+.hexagon::before{
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(60deg);
+}
+
+.hexagon::after{
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(-60deg);
+}
+
+.trait-icon {
+    position: absolute;
+    top: calc(50% - 22.5px);
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+
+    font-size: 34pt;
+    color: #ffffff;
+}
+
+.trait-title {
+    color: #453e4e;
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.profile-wrap {
+    display: flex;
+}
+
+.profile-picture {
+    height: 250px;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.blurb-title {
+    color: #453e4e;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 40%;
+    flex-shrink: 0;
+}
+
+.skill {
+    display: flex;
+    flex-basis: 11%;
+
+    background-color: #f8f5fa;
+
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    flex-basis: 20%;
+    flex-shrink: 0;
+
+    background-color: #9f6eea;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    padding: 5px;
+}
+
+.skill-percentage{
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-percentage span {
+    flex-basis: 100%;
+
+    text-align: right;
+
+    padding-right: 10px;
+}
+
+.skill-fill-bar {
+    flex-basis: 50%;
+    flex-shrink: 0;
+
+    background-color: #7245b6;
+}
+
+#skill-java { flex-basis: 70%; }
+#skill-python { flex-basis: 60%; }
+#skill-html { flex-basis: 70%; }
+#skill-css { flex-basis: 60%; }
+#skill-js { flex-basis: 50%; }
+#skill-react { flex-basis: 40%; }
+#skill-node { flex-basis: 40%; }
+#skill-ui { flex-basis: 40%; }
+#skill-ps { flex-basis: 30%; }
+
