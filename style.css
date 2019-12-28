@@ -86,11 +86,14 @@ nav {
     padding-top: 40px;
 }
 
-.about-wrap {
+.about-wrap, .projects-wrap, .experiences-wrap, .contact-wrap{
     display: flex;
+    margin-bottom: 40px;
+}
+
+.about-wrap {
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .traits {
@@ -177,6 +180,10 @@ nav {
     width: 250px;
     margin-right: 20px;
 
+    background-image: url(images/wolf.jpg);
+    background-position: center center;
+    background-size: cover;
+
     box-shadow: -3px 3px #9f6eea;
 
 }
@@ -248,4 +255,50 @@ nav {
 #skill-node { flex-basis: 40%; }
 #skill-ui { flex-basis: 40%; }
 #skill-ps { flex-basis: 30%; }
+
+.projects-wrap {
+    flex-direction: column;
+}
+
+.project-card {
+    display: flex;
+    margin: 10px;    
+
+    background-color: #f8f5fa;
+
+    box-shadow: -3px 3px #9f6eea;
+}
+
+.project-thumbnail {
+    flex-basis: 25%;
+    flex-shrink: 0;
+
+    height: 270px;
+
+    background-image: url(images/lion.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.project-desc-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-shrink: 1;
+}
+
+.project-name {
+    color: #453e4e;
+    font-size: 20pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.project-skills {
+    flex-basis: 25%;
+    flex-grow: 0;
+}
+
+
 
