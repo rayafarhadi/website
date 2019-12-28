@@ -20,7 +20,6 @@ nav {
     border-bottom: 3px solid #9f6eea;
 
     padding: 10px 20px;
-    margin-bottom: 40px;
 
     text-transform: uppercase;
 }
@@ -50,12 +49,27 @@ nav {
 }
 
 .nav-link:hover {
-    color: #ea876e;
+    color: #9f6eea;
 }
 
 .body {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.page-section {
+    position: relative;
+    width: 100%;
+}
+
+.page-section::after {
+    content: ' ';
+
+    position: absolute;
+    left: calc(50% - 125px);
+    width: 250px;
+
+    border-bottom: 3px solid #9f6eea
 }
 
 .header {
@@ -65,14 +79,18 @@ nav {
     text-transform: uppercase;
     text-align: center;
     font-weight: 800;
+
+    text-shadow: -1px 1px #9f6eea;
     
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .about-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .traits {
@@ -158,6 +176,9 @@ nav {
     height: 250px;
     width: 250px;
     margin-right: 20px;
+
+    box-shadow: -3px 3px #9f6eea;
+
 }
 
 .blurb-title {
