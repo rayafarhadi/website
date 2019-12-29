@@ -15,6 +15,13 @@ nav {
     display: flex;
     align-items: center;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 2;
+
     background-color: #2c2235;
     color: #ffffff;
     border-bottom: 3px solid #9f6eea;
@@ -86,6 +93,10 @@ nav {
     
     padding-bottom: 40px;
     padding-top: 40px;
+}
+
+.page-section#about {
+    margin-top: 80px;
 }
 
 .about-wrap, .projects-wrap, .experiences-wrap, .contact-wrap{
