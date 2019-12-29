@@ -363,12 +363,12 @@ nav {
 
 .experiences-wrap {
     display: flex;
+
+    justify-content: space-between;
 }
 
 .experience-card{
     display: flex;
-    
-    margin: 10px;
 
     background-color: #f8f5fa;
     box-shadow: -3px 3px #9f6eea;
