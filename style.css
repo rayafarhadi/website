@@ -39,6 +39,8 @@ nav {
     flex-grow: 0;
     flex-shrink: 1;
     justify-content: space-around;
+
+    list-style: none;
 }
 
 .nav-link {
@@ -53,8 +55,8 @@ nav {
 }
 
 .body {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .page-section {
@@ -91,6 +93,8 @@ nav {
     margin-bottom: 40px;
 }
 
+/* ---------------- About Section ----------------------*/
+
 .about-wrap {
     justify-content: space-between;
     align-items: center;
@@ -110,7 +114,6 @@ nav {
 
     margin-bottom: 10px;
     margin-top: 10px;
-    padding-left: 20px;
 }
 
 .hex-wrap{
@@ -171,6 +174,11 @@ nav {
     margin-bottom: 5px;
 }
 
+.trait-desc {
+    width: 250px;
+    text-align: center;
+}
+
 .profile-wrap {
     display: flex;
 }
@@ -190,8 +198,16 @@ nav {
 
 .blurb-title {
     color: #453e4e;
-    font-size: 16pt;
-    font-weight: 600;
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+.blurb {
+    margin-top: 10px;
+
+    text-align: justify;
+
+    width: 350px;
 }
 
 .skills {
@@ -256,6 +272,8 @@ nav {
 #skill-ui { flex-basis: 40%; }
 #skill-ps { flex-basis: 30%; }
 
+/* ---------------- Project Section ----------------------*/
+
 .projects-wrap {
     flex-direction: column;
 }
@@ -285,6 +303,8 @@ nav {
     flex-direction: column;
     flex-basis: 100%;
     flex-shrink: 1;
+
+    margin: 10px;
 }
 
 .project-name {
@@ -295,10 +315,37 @@ nav {
     text-align: center;
 }
 
+.project-description {
+    margin: 10px;
+    flex-basis: 100%;
+}
+
+.project-links {
+    
+}
+
 .project-skills {
+    display: flex;
+    flex-direction: column;
     flex-basis: 25%;
     flex-grow: 0;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 10px;
+
+    list-style: none;
 }
+
+.project-skill {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.project-skill[skill="java"] {background-image: url(images/java.png);}
+.project-skill[skill="html"] {background-image: url(images/html.png);}
+.project-skill[skill="css"] {background-image: url(images/css.png);}
 
 
 
