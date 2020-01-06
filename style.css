@@ -98,7 +98,7 @@ nav {
     margin-top: 80px;
 }
 
-.about-wrap, .projects-wrap, .experiences-wrap, .contact-wrap{
+.about-wrap, .mobile-about-wrap, .projects-wrap, .experiences-wrap, .contact-wrap{
     display: flex;
     margin-bottom: 40px;
 }
@@ -106,8 +106,13 @@ nav {
 /* ---------------- About Section ----------------------*/
 
 .about-wrap {
+    align-items: center;
+}
+
+.mobile-about-wrap {
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 .traits {
@@ -354,8 +359,6 @@ nav {
     margin: 10px;
     flex-basis: 100%;
 }
-
-.project-links {}
 
 .project-skills {
     display: flex;
@@ -704,5 +707,180 @@ footer {
     .experience-card {
         width: 300px;
     }
+}
+
+@media(max-width: 768px) {
+
+    /* -------- About ----------*/
+
+    .about-wrap {
+        flex-direction: column;
+    }
+
+    .mobile-about-wrap {
+        margin-bottom: 20px;
+    }
+
+    .profile-picture {
+        margin-bottom: 20px;
+    }
+
+    .blurb-wrap {
+        margin-bottom: 20px;
+    }
+
+    .skills {
+        width: 80%;
+    }
+
+    .skill-name {
+        font-size: initial;
+    }
+
+    .skill-percentage {
+        font-size: initial;
+    }
+
+    /* -------- Projects ----------*/
+
+    .project-thumbnail {
+        height: 175px;
+        width: 175px;
+    }
+
+    .project-desc-wrap {
+        margin: 0;
+    }
+
+    .project-name {
+        font-size: 20pt;
+    }
+
+    .project-description {
+        font-size: 11pt;
+    }
+
+    .project-skills {
+        margin: 0;
+        padding-left: 10px; 
+    }
+
+    .project-skill-large {
+        height: 100px;
+        width: 100px;
+    }
+
+    .project-skill-med {
+        height: 75px;
+        width: 75px;
+    }
+
+    /* -------- Experiences ----------*/
+
+    .experiences-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card {
+        width: 500px;
+
+        margin: 20px;
+    }
+
+    /* -------- Contact ----------*/
+
+    .contact-form button {
+        width: 125px;
+        height: 45px;
+    }
+}
+
+@media(max-width: 675px) {
+    .name {
+        font-size: 16pt;
+    }
+    
+    .skill-name {
+        flex-basis: 30%;
+    }
+
+    .skill-fill-bar {
+        flex-basis: 40%;
+    }
+
+    #skill-java { flex-basis: 50%; }
+    #skill-python { flex-basis: 40%; }
+    #skill-html { flex-basis: 50%; }
+    #skill-css { flex-basis: 40%; }
+    #skill-js { flex-basis: 30%; }
+    #skill-react { flex-basis: 20%; }
+    #skill-node { flex-basis: 20%; }
+    #skill-ui { flex-basis: 10%; }
+    #skill-ps { flex-basis: 10%; }
+
+    .project-name {
+        font-size: 16pt;
+    }
+
+    .project-description {
+        font-size: 10pt;
+    }
+}
+
+@media(max-width: 625px) {
+    
+    .body {
+        padding: 0;
+    }
+    
+    /* -------- About ----------*/
+    
+    .trait-title {
+        font-size: 14pt;
+    }
+
+    .trait-desc {
+        display: none;
+    }
+
+    .blurb {
+        width: 250px;
+    }
+
+    /* -------- Experiences ----------*/
+
+    .experience-card {
+        width: 100%;
+    }
+
+    /* -------- Contact ----------*/
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px) {
+    .name {
+        font-size: 14pt;
+    }
+}
+
+@media(max-width: 545px) {
+
+    .name {
+        font-size: 12pt;
+    }
+
+    .project-skills {
+        display: none;
+    }
+
+}
+
+@media(max-width: 505px) {
+
+   
 }
 
