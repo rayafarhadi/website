@@ -98,29 +98,32 @@ nav {
     margin-top: 80px;
 }
 
-.about-wrap, .mobile-about-wrap, .projects-wrap, .experiences-wrap, .contact-wrap{
+.desktop-about-wrap, .mobile-about-wrap, .projects-wrap, .experiences-wrap, .contact-wrap{
     display: flex;
     margin-bottom: 40px;
 }
 
 /* ---------------- About Section ----------------------*/
 
-.about-wrap {
+.desktop-about-wrap, .mobile-about-wrap {
     align-items: center;
+    justify-content: space-between;
 }
 
 .mobile-about-wrap {
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
+    display: none;
 }
 
-.traits {
+.traits, .small-traits {
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     flex-basis: 20%;
+}
+
+.small-traits {
+    display: none;
 }
 
 .trait {
@@ -233,12 +236,16 @@ nav {
     width: 350px;
 }
 
-.skills {
+.skills, .mobile-skills {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-basis: 40%;
     flex-shrink: 0;
+}
+
+.mobile-skills {
+    display: none;
 }
 
 .skill {
@@ -393,6 +400,9 @@ nav {
 .project-skill[skill="html"] {background-image: url(images/html.png);}
 .project-skill[skill="css"] {background-image: url(images/css.png);}
 
+.mobile-project-links {
+    display: none;
+}
 /* ---------------- Experiences Section ----------------------*/
 
 .experiences-wrap {
@@ -713,12 +723,18 @@ footer {
 
     /* -------- About ----------*/
 
-    .about-wrap {
+    .desktop-about-wrap {
         flex-direction: column;
+        display: none;
     }
 
     .mobile-about-wrap {
+        display: flex;
         margin-bottom: 20px;
+    }
+
+    .mobile-skills {
+        display: flex;
     }
 
     .profile-picture {
@@ -831,10 +847,14 @@ footer {
 @media(max-width: 625px) {
     
     .body {
-        padding: 0;
+        padding: 10px;
     }
     
     /* -------- About ----------*/
+
+    .mobile-about-wrap {
+        justify-content: space-evenly;
+    }
     
     .trait-title {
         font-size: 14pt;
@@ -846,6 +866,36 @@ footer {
 
     .blurb {
         width: 250px;
+    }
+
+    /* -------- Projects ----------*/
+
+    .project-card {
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .project-thumbnail {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .project-desc-wrap {
+        flex-shrink: 1;
+    }
+
+    .project-links {
+        display: none;
+    }
+
+    .project-skills {
+        flex-direction: row;
+    }
+
+    .mobile-project-links {
+        display: block;
     }
 
     /* -------- Experiences ----------*/
@@ -861,26 +911,14 @@ footer {
     }
 }
 
-@media(max-width: 600px) {
-    .name {
-        font-size: 14pt;
-    }
-}
-
-@media(max-width: 545px) {
-
-    .name {
-        font-size: 12pt;
-    }
-
-    .project-skills {
+@media(max-width: 375px) {
+    .traits {
         display: none;
     }
 
+    .small-traits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
-
-@media(max-width: 505px) {
-
-   
-}
-
