@@ -732,6 +732,7 @@ footer {
     .mobile-about-wrap {
         display: flex;
         margin-bottom: 20px;
+        justify-content: space-evenly;
     }
 
     .mobile-skills {
