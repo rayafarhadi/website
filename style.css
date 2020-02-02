@@ -409,7 +409,7 @@ nav {
 .experiences-wrap {
     display: flex;
 
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .experience-card{
