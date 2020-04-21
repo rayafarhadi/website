@@ -401,6 +401,14 @@ nav {
 .project-skill[skill="html"] {background-image: url(images/html.png);}
 .project-skill[skill="css"] {background-image: url(images/css.png);}
 
+.project-links a {
+    text-decoration: none;
+    font-size: 22pt;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .mobile-project-links {
     display: none;
 }
