@@ -12,12 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/0c7b98254e.js" crossorigin="anonymous"></script>
-    <script language="JavaScript">
-        var frmvalidator = new Validator("contactform"); 
-        frmvalidator.addValidation("name","req","Please provide your name"); 
-        frmvalidator.addValidation("email","req","Please provide your email"); 
-        frmvalidator.addValidation("email","email", "Please enter a valid email address"); 
-    </script>
+
 </head>
 
 <body>
@@ -376,11 +371,11 @@
 
         <div id="contact" class="page-section">
             <div class="header">Contact Me</div>
-            <form class="contact-form" action="contact.php" method="post">
+            <form class="contact-form" action="https://usebasin.com/f/ef3abdece640" method="POST">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="E-mail" required>
                 <input type="subject" name="subject" placeholder="Subject">
-                <textarea cols="30" rows="10" name="message" placeholder="Your Message"></textarea>
+                <textarea cols="30" rows="10" name="message" placeholder="Your Message" required></textarea>
                 <div class="button-wrap">
                     <button type="submit" name="submit">Submit</button>
                 </div>
