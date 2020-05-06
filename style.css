@@ -195,11 +195,6 @@ nav {
     margin-bottom: 5px;
 }
 
-.trait-desc {
-    width: 250px;
-    text-align: center;
-}
-
 .profile-wrap {
     display: flex;
 
@@ -211,7 +206,7 @@ nav {
     width: 250px;
     margin-right: 20px;
 
-    background-image: url(images/wolf.jpg);
+    background-image: url(images/profilePic.jpg);
     background-position: center center;
     background-size: cover;
 
@@ -352,7 +347,7 @@ nav {
     background-repeat: no-repeat;
     background-color: #241235;
 }
-#project-fgwb{background-image: url(images/lion.jpg);}
+#project-fgwb{background-image: url(images/FGWBScreenshot.PNG);}
 
 .project-desc-wrap {
     display: flex;
@@ -862,6 +857,13 @@ footer {
     }
 }
 
+@media(max-width: 660px) { 
+    .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @media(max-width: 625px) {
     
     .body {
@@ -883,7 +885,7 @@ footer {
     }
 
     .blurb {
-        width: 250px;
+        width: 300px;
     }
 
     /* -------- Projects ----------*/
@@ -934,7 +936,20 @@ footer {
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .name{
+        flex-grow: 1;
+
+        font-size: 30pt;
+    }
+
+}
+
+@media(max-width: 430px) {
     .traits {
         display: none;
     }
@@ -943,5 +958,11 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 325px) {
+    .blurb{
+        width: 250px;
     }
 }
