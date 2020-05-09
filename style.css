@@ -314,6 +314,23 @@ nav {
 #skill-ui { flex-basis: 20%; }
 #skill-ps { flex-basis: 20%; }
 
+.about-links {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.about-links a {
+    color: #7245b6;
+    text-decoration: none;
+    font-size: 35pt;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* ---------------- Project Section ----------------------*/
 
 .projects-wrap {
